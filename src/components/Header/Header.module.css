@@ -1,0 +1,72 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    padding: 2px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navLinkMobile{
+    display: none;
+    text-decoration: none;
+    font-family: "MontRegular";
+    color: white;
+    transition: color 0.3s ease-in-out;
+    padding-top: 8.5px;
+    margin-left: 50px;
+  }
+  
+  .navbarMobile {
+    display: none;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+  }
+
+  .navLink {
+    text-decoration: none;
+    font-family: "MontRegular";
+    color: white;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navItem {
+    font-size: 10px;
+  }
+  
+  
+  .navLink:hover {
+    color: #ffcc00;
+  }
+  
+  @media (max-width: 768px){
+    .navbar{
+      display: none;
+    }
+
+    .navbarMobile{
+      display: flex;
+    }
+    .navLinkMobile{
+      display: flex;
+    }
+  }

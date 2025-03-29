@@ -1,0 +1,15 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .section{
+      text-align: center;
+    }
+  }
+  

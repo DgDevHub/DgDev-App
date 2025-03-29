@@ -1,0 +1,51 @@
+/* components/HamburgerMenu/HamburgerMenu.module.css */
+.hamburgerButton {
+  font-size: 24px;
+  background: none;
+  padding-right: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.container{
+  display: none;
+  width: 10%;
+  justify-content: flex-end;
+}
+
+.navMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 200px;
+  height: 100vh;
+  background: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  z-index: 5;
+  transition: right 0.3s ease-in-out;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+@media (max-width: 768px){
+  .container{
+    display: flex;
+  }
+}

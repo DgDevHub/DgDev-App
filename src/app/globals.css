@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'MontRegular';
+  src: url('../../assets/Fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontMedium';
+  src: url('../../assets/Fonts/montserrat-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontBold';
+  src: url('../../assets/Fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontBlack';
+  src: url('../../assets/Fonts/mont-black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #c1761a;
+  --foreground: #f1f1f1;
+  --black: #383838;
+  --title-colorOne: #f1f1f1;
+  --title-colorTwo: #c1761a;
+}
+
+body {
+  background: var(--black);
+  color: var(--title-colorOne);
+  margin: 0;
+  padding: 0;
+}
