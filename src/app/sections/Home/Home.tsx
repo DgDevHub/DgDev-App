@@ -35,8 +35,7 @@ export default function Home() {
           <h2> DIEGO SILVA </h2>
           <h1> FULL STACK WEB </h1>
           <p> 
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis 
-          risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis"
+          "Sou um desenvolvedor com experiência em Next.js, React, TypeScript e CSS, especializado em criar APIs eficientes e soluções escaláveis. Atuei como Trainee na Criptonic & Co., aprimorando minhas habilidades em desenvolvimento web full stack. Tenho domínio em POO, React Hooks e arquitetura de software, sempre buscando inovação e otimização."
           </p>
           <div className={style.buttons}>
           <Button 

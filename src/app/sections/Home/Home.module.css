@@ -9,6 +9,11 @@
 
         img{
             margin-bottom: 10px;
+            transition: transform 0.2s ease-in-out;
+            
+            &:hover{
+                transform: scale(1.10);
+            }
         }
 }
 
@@ -34,8 +39,8 @@
         p{
             text-align: start;
             font-family: "MontRegular";
-            font-size: 0.75rem;
-            width: 50ch;
+            font-size: 0.65rem;
+            width: 45ch;
             margin-bottom: 15px;
         }
 

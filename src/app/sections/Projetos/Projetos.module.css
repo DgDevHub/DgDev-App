@@ -1,0 +1,9 @@
+.controllerCardsProjects{
+    display: flex;
+    width: 85%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

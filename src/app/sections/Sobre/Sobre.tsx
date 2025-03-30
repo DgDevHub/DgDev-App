@@ -23,42 +23,78 @@ export default function Sobre() {
       <Section isOrange = {false} IsHeightAuto = {true} >
         <div className={style.group_cards}>
       <Card
-        icon="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
-        title="Next.js"
-        hasColumnInverter={true}
-        hasMarginBottom={3}
-        colors={["--title-colorOne", ""]}
-        hasBackground="--background"
-      />
-      <Card
-        icon="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
-        title="Next.js"
-        hasColumnInverter={true}
-        hasMarginBottom={3}
-        colors={["--title-colorOne", ""]}
-        hasBackground="--background"
-      />
-      <Card
-        icon="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
-        title="Next.js"
-        hasColumnInverter={true}
-        hasMarginBottom={3}
-        colors={["--title-colorOne", ""]}
-        hasBackground="--background"
-      />
-      <Card
-        icon="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+        icon="/Images/ts.png"
         title="TypeScript"
         hasColumnInverter={true}
         hasMarginBottom={3}
         colors={["--title-colorOne", ""]}
         hasBackground="--background"
       />
+      <Card
+        icon="/Images/next.png"
+        title="Next.js"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/react.png"
+        title="React"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/css.png"
+        title="CSS5"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/api.png"
+        title="API"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/html.png"
+        title="HTML5"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/js.png"
+        title="JavaScript"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/ps.png"
+        title="Photoshop"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
+      <Card
+        icon="/Images/sass.png"
+        title="Sass"
+        hasColumnInverter={true}
+        hasMarginBottom={3}
+        colors={["--title-colorOne", ""]}
+        hasBackground="--background"
+      />
       </div>
-      </Section>
-      <Section isOrange = {false} >
-              <>
-              </>
       </Section>
     </>
   );

@@ -1,6 +1,6 @@
 
 .group_cards{
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -8,26 +8,12 @@
     margin-top: 23px;
 }
 
-.paragrafo{
-    font-family: "MontRegular";
-    font-size: 1rem;
-    color: var(--title-colorOne);
-    width: 110ch;
-    justify-self: center;
-    margin-top: 15px;
-}
+
 
 @media (max-width: 768px){
-    .paragrafo{
-        font-size: 0.70rem;
-        width: 40ch;
-    }
+
     .group_cards{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center; 
-        margin-top: 23px;
+        width: 98%;
     }
+
 }

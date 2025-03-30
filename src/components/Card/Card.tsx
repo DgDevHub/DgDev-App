@@ -8,7 +8,7 @@ export interface CardProps {
   colors: string[];
   hasBackground?:string;
   hasColumnInverter?:boolean;
-  hasMarginBottom: number;
+  hasMarginBottom?: number;
 }
 
 export default function Card({ icon, title, description, colors, hasBackground, hasColumnInverter, hasMarginBottom }: CardProps) {

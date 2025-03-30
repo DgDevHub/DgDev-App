@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    transition: transform 0.2s ease-in-out;
+            
+            &:hover{
+                transform: scale(1.10);
+            }
+
+        p{
+            font-size: 0.8rem;
+        }
+        .containerIcon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 5rem;
+            border-radius: 100%;
+            background-color: var(--background);
+            img{
+                width: 55px;
+            }
+        }
+}
+
+
