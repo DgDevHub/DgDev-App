@@ -7,7 +7,7 @@
     position: relative;
     z-index: 1;
 
-        img{
+        .img{
             margin-bottom: 10px;
             transition: transform 0.2s ease-in-out;
             
@@ -44,7 +44,7 @@
             margin-bottom: 15px;
         }
 
-        img{
+        .img{
             display: none !important;
         }
 
@@ -75,7 +75,7 @@
             font-size: 0.60rem;
         }
 
-            img{
+            .img{
                 display: flex !important;
                 margin-bottom: 0px;
             } 
@@ -90,7 +90,7 @@
 
     .controller_responsive{
 
-        img{
+        .img{
             display: none;
         }
     }
