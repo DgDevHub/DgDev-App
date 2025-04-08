@@ -89,7 +89,7 @@ const CardProject: React.FC<CardProjectProps> = ({
                 rel="noopener noreferrer"
                 className={styles.button}
               >
-                Visitar Site
+                Ver Site
               </a>
             )}
           </div>

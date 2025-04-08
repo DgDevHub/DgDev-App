@@ -18,7 +18,7 @@ export default function Projetos() {
         technologies={["React", "TypeScript", "Next.js","CSS5","Api","CSS5","Photoshop"]}
         owner="DgDevHub"   
         repo="DgDev-App"  
-        site="a"
+        site="https://dgdev-app.vercel.app"
         />
     <CardProject
         title="Cliente Dr.Erick"

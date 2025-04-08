@@ -32,10 +32,10 @@ const HamburgerMenu: React.FC = () => {
           ✖
         </button>
         
-        <a className={style.a} href="/test">Home</a>
-        <a className={style.a} href="#">Sobre</a>
-        <a className={style.a} href="#">Serviços</a>
-        <a className={style.a} href="/">Contato</a>
+        <a className={style.a} href="#home" onClick={() => setIsOpen(false)}>Home</a>
+        <a className={style.a} href="#Habilidades" onClick={() => setIsOpen(false)}>Habilidades</a>
+        <a className={style.a} href="#Projetos" onClick={() => setIsOpen(false)}>Projetos</a>
+        <a className={style.a} href="#contato" onClick={() => setIsOpen(false)}>Contato</a>
       </nav>
     </div>
   );

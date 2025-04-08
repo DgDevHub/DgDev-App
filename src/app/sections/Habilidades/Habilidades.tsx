@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Section from "@/components/Section/Section";
-import style from "./Sobre.module.css"
+import style from "./Habilidades.module.css"
 import Divider from "@/components/Divider/Divider";
 import Card from "@/components/Card/Card";
 import { describe } from "node:test";
