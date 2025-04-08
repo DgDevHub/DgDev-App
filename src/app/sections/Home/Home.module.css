@@ -24,19 +24,19 @@
     z-index: 1;
     text-align: start;
 
-        h2{
+        .h2{
             font-family: "MontBlack";
             margin-bottom: -28px;
             font-size: 3rem;
             
         }
-        h1{
+        .h1{
             font-family: "MontBlack";
             font-size: 2rem;
             margin-bottom: 0px;
             color: var(--title-colorTwo);
         }
-        p{
+        .p{
             text-align: start;
             font-family: "MontRegular";
             font-size: 0.65rem;
