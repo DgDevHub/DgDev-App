@@ -17,8 +17,8 @@ export default function Divider({h2,p,hasBackground,colors}:DividerProps) {
         backgroundColor: `${hasBackground}`,
       }}
       >
-        <h2>{h2}</h2>
-        <p style={{
+        <h2 className={style.h2}>{h2}</h2>
+        <p className={style.p} style={{
           color: `${colors}`,
         }}>
         <span className={style.line}></span> {p} <span className={style.line}></span>        </p>

@@ -14,10 +14,10 @@ export default function Icon({ title, icon, p, link} : IconProps){
         
     <article className={style.container}>
         <div className={style.containerIcon}>
-        <a href={link}><img src={icon}/></a>
+        <a href={link}><img className={style.img} src={icon}/></a>
         </div>
-        <h2> {title} </h2>
-        <p> {p} </p>
+        <h2 className={style.h2}> {title} </h2>
+        <p className={style.p}> {p} </p>
     </article>
         </>
       );
