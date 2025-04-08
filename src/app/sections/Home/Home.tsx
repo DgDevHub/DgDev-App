@@ -32,9 +32,9 @@ export default function Home() {
         height={0} 
         className={style.img}
         />
-          <h2> DIEGO SILVA </h2>
-          <h1> FULL STACK WEB </h1>
-          <p> 
+          <h2 className={style.h2}> DIEGO SILVA </h2>
+          <h1 className={style.h1}> FULL STACK WEB </h1>
+          <p className={style.p}> 
           "Sou um desenvolvedor com experiência em Next.js, React, TypeScript e CSS, especializado em criar APIs eficientes e soluções escaláveis. Atuei como Trainee na Criptonic & Co., aprimorando minhas habilidades em desenvolvimento web full stack. Tenho domínio em POO, React Hooks e arquitetura de software, sempre buscando inovação e otimização."
           </p>
           <div className={style.buttons}>
