@@ -44,7 +44,7 @@ export default function Home() {
             high={40} 
             colors={["--cor-texto", "--cor-fundo"]}
             download="Portfólio Diego Silva.pdf"
-            link="/Images/OIP.png"
+            link="/assets/Curriculo_Diego_Silva_DevDG.pdf"
             isDownloader={true}
           />
           <Button 

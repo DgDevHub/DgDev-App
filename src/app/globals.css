@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: 'MontRegular';
-  src: url('../../assets/Fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('/assets/Fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MontMedium';
-  src: url('../../assets/Fonts/montserrat-medium.ttf') format('truetype');
+  src: url('/assets/Fonts/montserrat-medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MontBold';
-  src: url('../../assets/Fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('/assets/Fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MontBlack';
-  src: url('../../assets/Fonts/mont-black.ttf') format('truetype');
+  src: url('/assets/Fonts/mont-black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
