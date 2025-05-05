@@ -9,7 +9,7 @@ export function useFetchRepo(owner: string, repo: string) {
   useEffect(() => {
     async function fetchRepoData() {
       try {
-        const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN; // Coloque o seu token aqui, mas prefira usar variáveis de ambiente
+        const token = process.env.GITHUB_TOKEN; // Coloque o seu token aqui, mas prefira usar variáveis de ambiente
 
         const response = await fetch(
           `https://api.github.com/repos/${owner}/${repo}`,
