@@ -1,4 +1,3 @@
-// useFetchRepo.ts
 import { useState, useEffect } from "react";
 
 export function useFetchRepo(owner: string, repo: string) {
@@ -9,17 +8,7 @@ export function useFetchRepo(owner: string, repo: string) {
   useEffect(() => {
     async function fetchRepoData() {
       try {
-        const token = process.env.GITHUB_TOKEN; // Coloque o seu token aqui, mas prefira usar variáveis de ambiente
-
-        const response = await fetch(
-          `https://api.github.com/repos/${owner}/${repo}`,
-          {
-            headers: {
-              Authorization: `token ${token}`,
-              Accept: "application/vnd.github.v3+json",
-            },
-          }
-        );
+        const response = await fetch(`/api/repos?owner=${owner}&repo=${repo}`);
 
         if (!response.ok) {
           throw new Error(`Erro ${response.status}: ${response.statusText}`);

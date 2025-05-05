@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./CardProject.module.css";
-import { useFetchRepo } from "./useFetchRepo"; // Importe o hook
+import { useFetchRepo } from "./useFetchRepo";
 
 interface CardProjectProps {
   title?: string;
@@ -11,7 +11,7 @@ interface CardProjectProps {
   owner: string;
   repo: string;
   link?: string;
-  site?: string; // Adicionando a propriedade para o link do site
+  site?: string;
 }
 
 const CardProject: React.FC<CardProjectProps> = ({
@@ -25,17 +25,12 @@ const CardProject: React.FC<CardProjectProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  // Usando o hook para buscar os dados do repositório
   const { data, loading, error } = useFetchRepo(owner, repo);
 
-  // Verifica se o token está disponível (isso deve ser configurado na variável de ambiente)
-  const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+  const isPrivate = data?.private;
 
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro ao carregar repositório: {error}</p>;
-
-  // Lógica para definir o estilo do botão quando o repositório for privado
-  const isPrivate = token && data?.private;
 
   return (
     <div
@@ -65,7 +60,6 @@ const CardProject: React.FC<CardProjectProps> = ({
           </p>
 
           <div className={styles.buttonContainer}>
-            {/* Botão para visitar o repositório */}
             {isPrivate ? (
               <button className={`${styles.button} ${styles.privateButton}`} disabled>
                 Privado
@@ -80,8 +74,7 @@ const CardProject: React.FC<CardProjectProps> = ({
                 Repositório
               </a>
             )}
-            
-            {/* Botão para visitar o site */}
+
             {site && (
               <a
                 href={site}
