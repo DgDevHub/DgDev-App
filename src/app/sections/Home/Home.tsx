@@ -10,12 +10,13 @@ import HamburgerMenu from "@/components/HamburgerMenu/HamburgerMenu";
 export default function Home() {
 
     const links = [
-        { href: "/" },
-        { href: "/about" },
-        { href: "/contact" },
+        { href: "#Home" },
+        { href: "#Habilidades" },
+        { href: "#Contato" },
+        { href: "#Projetos" },
       ];
       
-      const textos = ["Início", "Sobre", "Contato"];
+      const textos = ["Início", "Habilidades", "Contato", "Projetos"];
 
   return (
     <>

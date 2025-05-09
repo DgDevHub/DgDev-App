@@ -8,10 +8,10 @@ import Contato from "./sections/Contato/Contato";
 export default function Main() {
   return (
     <>
-      <AnimatedSection><div id="home"><Home /></div></AnimatedSection>
+      <AnimatedSection><div id="Home"><Home /></div></AnimatedSection>
       <AnimatedSection><div id="Habilidades"><Sobre /></div></AnimatedSection>
       <AnimatedSection><div id="Projetos"><Projetos /></div></AnimatedSection>
-      <AnimatedSection><div id="contato"><Contato /></div></AnimatedSection>
+      <AnimatedSection><div id="Contato"><Contato /></div></AnimatedSection>
     </>
   );
 }
