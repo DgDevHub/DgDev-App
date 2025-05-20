@@ -34,7 +34,7 @@ export default function Projetos() {
         technologies={["HTML5", "CSS5", "JavaScript", "SEO","Photoshop"]}
         owner="DgDevHub"   
         repo="ExPrag" 
-        site="https://github.com/DgDevHub/ExPrag"  
+        site="https://ex-prag.vercel.app/"  
     />
         <CardProject
         title="Audote"
