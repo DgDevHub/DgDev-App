@@ -29,6 +29,14 @@ export default function Projetos() {
         site="https://esradv.com.br/"
         />
         <CardProject
+        title="Cliente Exprag"
+        image="/Images/exprag.png"
+        technologies={["HTML5", "CSS5", "JavaScript", "SEO","Photoshop"]}
+        owner="DgDevHub"   
+        repo="ExPrag" 
+        site="https://github.com/DgDevHub/ExPrag"  
+    />
+        <CardProject
         title="Audote"
         image="/Images/audote.png"
         technologies={["HTML5", "CSS3", "JavaScript","POO"]}
