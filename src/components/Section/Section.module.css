@@ -1,15 +1,30 @@
 .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-size: 320% 320%;
+  animation: backgroundShift 12s ease infinite;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section {
     text-align: center;
   }
-  
-  @media (max-width: 768px) {
-    .section{
-      text-align: center;
-    }
+}
+
+/* Animação do background */
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
   }
-  
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

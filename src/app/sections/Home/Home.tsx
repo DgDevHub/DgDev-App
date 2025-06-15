@@ -16,14 +16,14 @@ export default function Home() {
         { href: "#Projetos" },
       ];
       
-      const textos = ["Início", "Habilidades", "Contato", "Projetos"];
+      const textos = ["INÍCIO", "HABILIDADES", "CONTATO", "PROJETOS"];
 
   return (
     <>
     <Header links={links} textos={textos}>
     <HamburgerMenu/>
     </Header>
-    <Section isOrange = {false} IsHeightAuto = {false} >
+    <Section IsOrange = {false} IsHeightAuto = {false} >
       <div className={style.controller_responsive}>
         <div className={style.container}>
         <Image 
@@ -43,7 +43,7 @@ export default function Home() {
             text="Download CV"
             large={186}
             high={40} 
-            colors={["--cor-texto", "--cor-fundo"]}
+            colors={["--background", "--subbackground"]}
             download="Portfólio Diego Silva.pdf"
             link="/assets/Curriculo_Diego_Silva_DevDG.pdf"
             isDownloader={true}
@@ -52,7 +52,7 @@ export default function Home() {
             text="Fale comigo"
             large={186}
             high={40}
-            colors={["--cor-texto", "--cor-fundo"]}
+            colors={["--background", "--subbackground"]}
             link="https://www.linkedin.com/in/diego-silva-de-carvalho-82581a326/"
           />
           </div>

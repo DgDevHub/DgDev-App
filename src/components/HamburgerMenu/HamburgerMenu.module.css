@@ -1,7 +1,6 @@
 /* components/HamburgerMenu/HamburgerMenu.module.css */
 .hamburgerButton {
   font-size: 24px;
-  background: none;
   padding-right: 20px;
   border: none;
   cursor: pointer;
@@ -21,8 +20,8 @@
   right: -100%;
   width: 200px;
   height: 100vh;
-  background: #333;
-  color: white;
+  background: var(--black);
+  color: var(--background);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -30,6 +29,7 @@
   z-index: 5;
   transition: right 0.3s ease-in-out;
     .a{
+      font-family: "MontRegular";
       color: white;
       text-decoration: none;
     }

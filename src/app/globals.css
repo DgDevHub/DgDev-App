@@ -29,19 +29,37 @@
 }
 
 :root {
-  --background: #c1761a;
-  --foreground: #f1f1f1;
-  --black: #383838;
+  --background: #f1f1f1;     
+  --subbackground: #c1761a;
+  --subbackgroundgradient: #dddbdb;  
+  --subbackgroundgradientorange: #aa6919;  
+  --details: #636363;    
+  --black: #686868;          
   --title-colorOne: #f1f1f1;
-  --title-colorTwo: #c1761a;
+  --title-colorTwo: #c1761a; 
 }
 
+
+
 body {
-  background: var(--black);
-  color: var(--title-colorOne);
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(270deg, var(--background), var(--subbackgroundgradient), var(--background));
+  background-size: 320% 320%;
+  animation: backgroundShift 12s ease infinite;
 }
+
+/* Animação */
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 html {
   scroll-behavior: smooth;

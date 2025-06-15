@@ -25,6 +25,7 @@
     text-align: start;
 
         .h2{
+            color: var(--black);
             font-family: "MontBlack";
             margin-bottom: -28px;
             font-size: 3rem;
@@ -42,6 +43,7 @@
             font-size: 0.65rem;
             width: 45ch;
             margin-bottom: 15px;
+            color: var(--black);
         }
 
         .img{
@@ -61,6 +63,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-bottom: 0rem;
 
         .h2{
             font-size: 2rem;

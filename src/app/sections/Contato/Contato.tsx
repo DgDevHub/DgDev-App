@@ -10,7 +10,7 @@ export default function Contato() {
   return (
     <>
     <Section IsHeightAuto={true} IsColumn={true}>
-         <Divider hasBackground="var(--black)" colors="var(--title-colorTwo)" h2="Contato" p="Onde me contratar" />
+         <Divider hasBackground={true}  colors={["var(--background)", "var(--background)", "var(--background)"]} h2="CONTATO" p="Onde me encontrar?" />
 
         <div className={style.container}>
         <Icon link="" icon="/Images/email.png" title="Email" p="diegosilvacarvalhodev@gmail.com"/>

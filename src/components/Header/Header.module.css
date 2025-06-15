@@ -1,18 +1,29 @@
 .header {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #383838;
-    padding: 2px;
+    justify-self: center;
   }
   
   .navbar {
+    margin-top: 20px;
+    width: 400px;
+    height: 35px;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    position: fixed;
+    background-color: var(--title-colorTwo);
+    top: 0;
+    left: 515;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 9;
-    z-index: 1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
   }
   
   .navList {
@@ -25,17 +36,20 @@
   
   .navLinkMobile{
     display: none;
+    justify-self: center !important;
     text-decoration: none;
-    font-family: "MontRegular";
-    color: white;
+    font-family: "MontBold";
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-size: 1.3rem;
+    color: var(--black);
     transition: color 0.3s ease-in-out;
-    padding-top: 8.5px;
-    margin-left: 50px;
   }
   
   .navbarMobile {
     display: none;
-    width: 100%; 
+    width: 100%;
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -43,11 +57,17 @@
   }
 
   .navLink {
+    display: inline-block;
     text-decoration: none;
-    font-family: "MontRegular";
+    font-family: "MontBold";
     color: white;
     font-size: 13px;
-    transition: color 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.10);
+    }
+
   }
 
   .navItem {

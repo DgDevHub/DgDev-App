@@ -10,7 +10,7 @@ export default function Projetos() {
   return (
     <>
     <Section IsHeightAuto={true} IsColumn={true}>
-    <Divider hasBackground="var(--black)" colors="var(--title-colorTwo)" h2="Projetos" p="Veja meus trabalhos" />
+    <Divider hasBackground={false} colors={["var(--subbackground)", "var(--black)","var(--black)"]} h2="PROJETOS" p="Veja meus trabalhos" />
     <div className={style.controllerCardsProjects}>
     <CardProject
         title="Portfólio Dev"

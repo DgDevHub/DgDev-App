@@ -4,6 +4,8 @@
     height: auto;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px;
+    
 }

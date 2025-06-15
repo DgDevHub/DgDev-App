@@ -1,111 +1,191 @@
 .card {
-    position: relative;
-    width: 350px;
-    height: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: solid var(--foreground);
-    transition: transform 0.3s ease-in-out;
-    margin-top: 25px;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .techContainer {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 10px;
-  }
-  
-  .tech {
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 14px;
-    color: var(--title-colorOne);
-    border: solid var(--foreground);
-  }
-  
-  .info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .date {
-    font-size: 14px;
-  }
-  
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--background);
-    color: white;
-    padding: 6px 12px;
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .buttonContainer{
-    width: 100px;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-  }
-  .button:hover {
-    background: var(--background);
-  }
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 7px solid var(--black);
+  transition: transform 0.3s ease-in-out;
+}
 
-  .privateButton {
-    background-color: #d3d3d3;
-    color: #808080; 
-    pointer-events: none; 
-  }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
 
-  @media (max-width: 768px){
-    .card{
-      width: 300px;
-    }
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.techContainer {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tech {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: "MontRegular";
+  color: var(--background);
+  border: solid var(--background);
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+.date {
+  font-size: 14px;
+}
+
+/* BOTÃO INTERATIVO */
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--subbackground);
+  color: var(--background);
+  padding: 6px 12px;
+  width: 100px;
+  height: 25px;
+  border-radius: 11px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+/* ESSENCIAL para manter o texto visível */
+.button span,
+.button {
+  position: relative;
+  z-index: 2;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background: var(--background);
+  color: var(--black) !important;
+  border-radius: 11px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: scale(0.95);
+  filter: brightness(0.9);
+}
+
+/* ANIMAÇÕES */
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 0;
+}
+
+.button::before {
+  background: var(--background) !important;
+  border: 3px solid var(--subbackground);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.button::after {
+  background: var(--subbackground) !important;
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.button:hover::after {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* BOTÃO PRIVADO SEM EFEITOS */
+.privateButton {
+  background-color: var(--black);
+  color: var(--background);
+  pointer-events: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  width: 100px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Garante que nenhum efeito afete o botão desativado */
+.privateButton::before,
+.privateButton::after {
+  display: none;
+}
+
+.privateButton:hover,
+.privateButton:active {
+  all: unset;
+}
+
+.buttonContainer {
+  width: 100px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 300px;
   }
-  
+}

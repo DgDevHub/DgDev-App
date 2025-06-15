@@ -1,17 +1,20 @@
 .divider{
     display: flex;
     width: 100%;
-    height: auto;
-    color: var(--title-colorOne);
+    height: 4rem;
+    margin-top: 10px;
+    color: var(--background);
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3rem;
+    background-size: 320% 320%;
+    animation: backgroundShift 12s ease infinite;
 
         .h2{
             font-family: "MontBold";
-            font-size: 1.6rem;
-            margin-bottom: -12px;
+            font-size: 2rem;
+            margin-bottom: -15px;
         }
         .p{
             font-family: "MontRegular";
@@ -20,29 +23,40 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: -10px;
+            margin-bottom: 0;
         }
 }
 
 .line {
     display: inline-block;
     width: 20px; 
-    height: 1.5px; 
-    background-color: var(--title-colorOne); 
+    height: 4px;  
   }
 
   @media (max-width: 768px){
 
     .divider{
-
+        margin-bottom: -1px;
         .h2{
             font-size: 1.3rem !important;
             margin-bottom: -8px !important;
         }
         .p{
             font-size: 0.8rem !important;
-            margin-bottom: -10px;
         }
     }
 
   }
+  
+/* Animação */
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

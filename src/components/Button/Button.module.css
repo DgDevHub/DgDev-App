@@ -1,11 +1,12 @@
 /* Button styling inside the container */
 .button {
   display: inline-flex;
+  border-radius: 11px;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
   font-weight: bold;
-  color: var(--title-colorOne);
+  color: var(--background);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -14,8 +15,10 @@
 }
 
 .button:hover {
-  background-color: var(--title-colorOne) !important;
-  color: #383838 !important;
+  border-radius: 11px;
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: var(--black) !important;
 }
 
 /* Active state for button */
@@ -29,6 +32,7 @@
 .button::before,
 .button::after {
   content: "";
+  border-radius: 11px;
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +43,9 @@
 }
 
 .button::before {
-  background: var(--title-colorOne) !important;
+  border-radius: 11px;
+  background: var(--background) !important;
+  border: 3px solid var(--subbackground);
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -50,7 +56,7 @@
 }
 
 .button::after {
-  background: var(--title-colorTwo) !important;
+  background: var(--subbackground) !important;
   transform: scaleX(1);
   transform-origin: right;
 }

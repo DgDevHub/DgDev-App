@@ -62,7 +62,7 @@ const CardProject: React.FC<CardProjectProps> = ({
           <div className={styles.buttonContainer}>
             {isPrivate ? (
               <button className={`${styles.button} ${styles.privateButton}`} disabled>
-                Privado
+                 <span> Privado </span>
               </button>
             ) : (
               <a
@@ -71,7 +71,7 @@ const CardProject: React.FC<CardProjectProps> = ({
                 rel="noopener noreferrer"
                 className={styles.button}
               >
-                Repositório
+                 <span> Repositório </span>
               </a>
             )}
 
@@ -82,7 +82,7 @@ const CardProject: React.FC<CardProjectProps> = ({
                 rel="noopener noreferrer"
                 className={styles.button}
               >
-                Ver Site
+                 <span> Ver Site </span>
               </a>
             )}
           </div>
