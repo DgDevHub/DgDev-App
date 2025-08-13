@@ -1,10 +1,9 @@
-.header {
+  .header {
     margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-self: center;
   }
   
   .navbar {
@@ -19,7 +18,7 @@
     position: fixed;
     background-color: var(--title-colorTwo);
     top: 0;
-    left: 515;
+    left: 715;
     display: flex;
     justify-content: center;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -89,5 +88,33 @@
     }
     .navLinkMobile{
       display: flex;
+    }
+  }
+  @media (max-width: 1025px){
+    .navbar{
+      display: none;
+    }
+
+    .navbarMobile{
+      display: flex;
+      position: relative;
+      left: 1rem;
+    }
+    .navLinkMobile{
+      display: flex;
+    }
+  }
+  @media (max-width: 1180px){
+    .navbar{
+      display: flex;
+      right: 45rem;
+      margin-top: 3rem;
+    }
+
+    .navbarMobile{
+      display: none;
+    }
+    .navLinkMobile{
+      display: none;
     }
   }

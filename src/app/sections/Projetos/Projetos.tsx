@@ -44,6 +44,14 @@ export default function Projetos() {
         repo="Projeto-Audote" 
         site="https://mini-projeto-m2-adocao.vercel.app/"  
     />
+        <CardProject
+        title="Route Alive"
+        image="/Images/routealive.png"
+        technologies={["Next.js", "Tailwind", "Api RESTful","Express","Node.js","Photoshop"]}
+        owner="DgDevHub"   
+        repo="routealivefront" 
+        site="https://routealivefront.vercel.app/"  
+    />
     </div>
     </Section>
     </>
