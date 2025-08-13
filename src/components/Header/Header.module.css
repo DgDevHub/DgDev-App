@@ -39,7 +39,7 @@
     text-decoration: none;
     font-family: "MontBold";
     position: relative;
-    left: 20px;
+    left: 0px;
     top: 5px;
     font-size: 1.3rem;
     color: var(--black);
@@ -78,7 +78,7 @@
     color: var(--background);
   }
   
-  @media (max-width: 768px){
+  @media (max-width: 885px){
     .navbar{
       display: none;
     }
@@ -90,6 +90,7 @@
       display: flex;
     }
   }
+
   @media (max-width: 1025px){
     .navbar{
       display: none;
@@ -104,7 +105,8 @@
       display: flex;
     }
   }
-  @media (max-width: 1180px){
+  
+  @media (min-width: 1180px){
     .navbar{
       display: flex;
       right: 45rem;

@@ -17,7 +17,7 @@ export default function Contato() {
 
         <Icon link="https://www.twitch.tv/devedg/" icon="/Images/twitch.png" title="Twitch" p="DeveDg"/>
 
-        <Icon link="https://www.instagram.com/desenvolvendocomdg/" icon="/Images/instagram.png" title="Instagram" p="Desenvolvendocomdg"/>
+        <Icon link="https://www.instagram.com/apenasodg" icon="/Images/instagram.png" title="Instagram" p="Apenasodg"/>
 
         <Icon link="https://www.linkedin.com/in/diego-silva-de-carvalho-82581a326/" icon="/Images/linkedin.png" title="Linkedin" p="Diego Silva"/>
         </div>

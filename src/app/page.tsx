@@ -1,5 +1,4 @@
 
-import AnimatedSection from "@/components/AnimatedSection/AnimatedSection"; 
 import Home from "@/app/sections/Home/Home";
 import Sobre from "@/app/sections/Habilidades/Habilidades";
 import Projetos from "./sections/Projetos/Projetos";
@@ -8,10 +7,10 @@ import Contato from "./sections/Contato/Contato";
 export default function Main() {
   return (
     <>
-      <AnimatedSection><div id="Home"><Home /></div></AnimatedSection>
-      <AnimatedSection><div id="Habilidades"><Sobre /></div></AnimatedSection>
-      <AnimatedSection><div id="Projetos"><Projetos /></div></AnimatedSection>
-      <AnimatedSection><div id="Contato"><Contato /></div></AnimatedSection>
+      <div id="Home"><Home /></div>
+      <div id="Habilidades"><Sobre /></div>
+      <div id="Projetos"><Projetos /></div>
+      <div id="Contato"><Contato /></div>
     </>
   );
 }
